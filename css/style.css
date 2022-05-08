@@ -5,10 +5,10 @@
     font-family: sans-serif;
 }
 
-.container {
+.main-container {
     height: 15vh;
     width: 100%;
-    background-color: #F4DFBA;   
+    background-image: linear-gradient(to right, rgb(22, 200, 78) , yellow); 
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -23,36 +23,72 @@
     width: 3rem;
 }
 
-#textrotate span {
-    position: absolute;
-    left: 50%;
-    font-size: 1.3rem;
-    transform-origin: 0 80px;
-}   
+/* #container { margin: 0%; }
 
-#textrotate {
-    animation: rotate 5s linear infinite;
+#circle { position: relative; width: 100%; padding-bottom: 100%; overflow: hidden; }
+
+#circle text { font-family: 'Helvetica Neue', Arial; font-size: 16px; font-weight: bold; }
+
+#circle svg { position: absolute; left: 0; top: 0; width: 100%; height: 540px;
+
+  -webkit-animation-name: rotate;
+     -moz-animation-name: rotate;
+      -ms-animation-name: rotate;
+       -o-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 5s;
+     -moz-animation-duration: 5s;
+      -ms-animation-duration: 5s;
+       -o-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+      -ms-animation-iteration-count: infinite;
+       -o-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+      -ms-animation-timing-function: linear;
+       -o-animation-timing-function: linear;
+          animation-timing-function: linear;
+
 }
 
+@-webkit-keyframes rotate {
+    from { -webkit-transform: rotate(360deg); }
+    to { -webkit-transform: rotate(0); }
+}
+@-moz-keyframes rotate {
+    from { -moz-transform: rotate(360deg); }
+    to { -moz-transform: rotate(0); }
+}
+@-ms-keyframes rotate {
+    from { -ms-transform: rotate(360deg); }
+    to { -ms-transform: rotate(0); }
+}
+@-o-keyframes rotate {
+    from { -o-transform: rotate(360deg); }
+    to { -o-transform: rotate(0); }
+}
 @keyframes rotate {
-    0% { transform: rotate(0); }
-    100% { transform: rotate(360deg); }
-}
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0); }
+} */
 
-.fa-heart:hover {
+
+.fa-heart {
     color: red;
-    font-size: 2rem;
 }
-.fa-github:hover {
+.fa-github {
     color: #171515 ;
 }
-.fa-linkedin:hover {
+.fa-linkedin {
     color:#0077b5;
 }
 
-.fa-instagram:hover {
-    color:#bc2a8d;
+.fa-instagram {
+    color:#cd486b;
 }
-.fa-youtube:hover {
+.fa-youtube {
     color: red;
 }
