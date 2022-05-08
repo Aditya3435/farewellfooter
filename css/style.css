@@ -2,4 +2,57 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    height: 15vh;
+    width: 100%;
+    background-color: #F4DFBA;   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social a {
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+.footerlogo img {
+    width: 3rem;
+}
+
+#textrotate span {
+    position: absolute;
+    left: 50%;
+    font-size: 1.3rem;
+    transform-origin: 0 80px;
+}   
+
+#textrotate {
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0); }
+    100% { transform: rotate(360deg); }
+}
+
+.fa-heart:hover {
+    color: red;
+    font-size: 2rem;
+}
+.fa-github:hover {
+    color: #171515 ;
+}
+.fa-linkedin:hover {
+    color:#0077b5;
+}
+
+.fa-instagram:hover {
+    color:#bc2a8d;
+}
+.fa-youtube:hover {
+    color: red;
 }
