@@ -64,7 +64,7 @@
 .footerlogo {
   height: 3.5rem;
   width: 3.5rem;
-  animation: antirotate 10s linear infinite;
+  animation: antirotate 12s linear infinite;
 
 }
 
@@ -141,8 +141,8 @@
 #circle {
   position: absolute;
   transition: all 0.5s;
-  top: -6rem;
-  left: -6rem;
+  top: -5.7rem;
+  left: -5.7rem;
 }
 
 #circle text {
@@ -180,6 +180,14 @@
 @media all and (max-width: 980px) {
   .finalmsg p {
     font-size: 1.3rem;
+  }
+  #circle {
+      position: absolute;
+      transition: all 0.5s;
+      top: -6rem;
+      transform: scale(0.7);
+      left: -6rem;
+    
   }
   .footerlogo {
     height: 3rem;
@@ -228,6 +236,11 @@
 
   #circle {
     transform: scale(0.7);
+      position: absolute;
+      transition: all 0.5s;
+      top: -6rem;
+      left: -6rem;
+    
   }
 
 }
