@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
 .main-container {
@@ -12,7 +11,7 @@
   background-image: linear-gradient(200deg, #1ed296, #d63aa2);
   background-size: 200% 200%;
   animation: gradient 3s linear infinite;
-  display: flex;                            
+  display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 10px 5px 10px #000;
@@ -45,9 +44,8 @@
   }
 }
 
-
 .main-container:hover::before {
-  opacity:1;
+  opacity: 1;
 }
 
 .social a {
@@ -73,8 +71,10 @@
   animation: bump 0.3s infinite alternate;
   text-shadow: none;
 }
-@keyframes bump{
-	to { transform: scale(1.5); }
+@keyframes bump {
+  to {
+    transform: scale(1.5);
+  }
 }
 
 .fa-github {
@@ -93,43 +93,42 @@
 .fa-instagram {
   color: #b44b67;
   padding: 0.2em;
-  border-radius:1rem;
+  border-radius: 1rem;
   transition: all 0.5s;
 }
 .fa-youtube {
-  color: #c4302b ;
+  color: #c4302b;
   padding: 0.2em;
   border-radius: 1rem;
   transition: all 0.5s;
 }
 
-.fa-heart:hover{
+.fa-heart:hover {
   cursor: none;
 }
 .fa-github:hover {
   color: #fff;
   background-color: #171515bf;
-  box-shadow:1px 1px 10px rgb(0, 0, 0);
+  box-shadow: 1px 1px 10px rgb(0, 0, 0);
   transform: scale(0.5);
 }
 .fa-linkedin:hover {
   color: #fff;
   background-color: #0076b571;
-  box-shadow:1px 1px 10px rgb(0, 0, 0);
+  box-shadow: 1px 1px 10px rgb(0, 0, 0);
   transform: scale(0.5);
-  
 }
 .fa-instagram:hover {
   color: #fff;
   transform: scale(0.5);
-  box-shadow:1px 1px 10px rgb(0, 0, 0);
+  box-shadow: 1px 1px 10px rgb(0, 0, 0);
   background-color: #cd486bb5;
 }
 .fa-youtube:hover {
   transform: scale(0.5);
   color: #fff;
-  background-color: #c4302b9c; 
-  box-shadow:1px 1px 10px rgb(0, 0, 0);
+  background-color: #c4302b9c;
+  box-shadow: 1px 1px 10px rgb(0, 0, 0);
 }
 
 .container {
@@ -137,19 +136,19 @@
 }
 
 #circle {
-    position: absolute;
-    top:0;
-    left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 #circle text {
   font-family: "Helvetica Neue", Arial;
-  font-size:2.2rem;
+  font-size: 2.2rem;
   font-weight: 500;
 }
 
 #circle svg {
-    animation: rotate 5s linear infinite;
+  animation: rotate 5s linear infinite;
 }
 
 @keyframes rotate {
@@ -161,61 +160,48 @@
   }
 }
 
-
 /* media-queries */
-@media all and (max-width:980px){
-      .finalmsg p, finalmsg{
-        font-size:1.2rem;
-      }
-      .footerlogo {
-        height: 3rem;
-        width: 3rem;
-      }
-      .social a {
-      font-size:2rem;
-      padding: 0;
-    }
-    body {
-      background-color: #0077b5;
-    }
-
+@media all and (max-width: 980px) {
+  .finalmsg p,
+  finalmsg {
+    font-size: 1.2rem;
+  }
+  .footerlogo {
+    height: 3rem;
+    width: 3rem;
+  }
+  .social a {
+    font-size: 2rem;
+    padding: 0;
+  }
 }
 
-@media all and (max-width:700px) {
-  .finalmsg p, finalmsg{
-    font-size:0.7rem;
+@media all and (max-width: 700px) {
+  .finalmsg p,
+  finalmsg {
+    font-size: 0.7rem;
   }
   .footerlogo {
     height: 2.8rem;
     width: 2.8rem;
   }
   .social a {
-  font-size:1.4rem;
-  padding: 0;
-}
-    body {
-      background-color: #dd00ff;
-    }
-
+    font-size: 1.4rem;
+    padding: 0;
+  }
 }
 
-@media all and (max-width:415px) {
-  .finalmsg p, finalmsg{
-    font-size:0.6rem;
+@media all and (max-width: 415px) {
+  .finalmsg p,
+  finalmsg {
+    font-size: 0.6rem;
   }
   .footerlogo {
     height: 2rem;
     width: 2rem;
   }
   .social a {
-  font-size:1rem;
-  padding: 0;
+    font-size: 1rem;
+    padding: 0;
+  }
 }
-    body {
-      background-color: #ff8800;
-    }
-
-}
-
-
-
