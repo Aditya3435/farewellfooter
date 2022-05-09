@@ -2,13 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: monospace;
+  
 }
 
 .main-container {
   position: relative;
-  padding: 3rem;
-  width: 100%;
+  padding: 2rem;
   transition: all 1s;
   background-image: linear-gradient(200deg, #1ed296, #d63aa2);
   background-size: 200% 200%;
@@ -57,6 +56,7 @@
 }
 .finalmsg p {
   font-size: 2rem;
+  font-family: monospace;
   color: #fff;
   text-shadow: 2px 2px 19px rgb(0, 0, 0);
   font-weight: 600;
@@ -110,27 +110,28 @@
   color: #fff;
   background-color: #171515bf;
   box-shadow:1px 1px 10px rgb(0, 0, 0);
-  transform: translateX(0.5rem) rotate(360deg);
+  transform: scale(0.5);
 }
 .fa-linkedin:hover {
   color: #fff;
   background-color: #0076b571;
   box-shadow:1px 1px 10px rgb(0, 0, 0);
-  transform: translateX(0.5rem) rotate(360deg);
+  transform: scale(0.5);
   
 }
 .fa-instagram:hover {
   color: #fff;
-  transform: translateX(0.5rem) rotate(360deg);
+  transform: scale(0.5);
   box-shadow:1px 1px 10px rgb(0, 0, 0);
   background-color: #cd486bb5;
 }
 .fa-youtube:hover {
-  transform: translateX(0.5rem) rotate(360deg);
+  transform: scale(0.5);
   color: #fff;
   background-color: #c4302b9c; 
   box-shadow:1px 1px 10px rgb(0, 0, 0);
 }
+
 .container {
   position: relative;
 }
@@ -162,19 +163,58 @@
 
 
 /* media-queries */
-@media all and (max-width:868px),
-    screen and (orientation:landscape) {
-    * {
-        font-size:0.4rem;
+@media all and (max-width:980px){
+      .finalmsg p, finalmsg{
+        font-size:1.2rem;
+      }
+      .footerlogo {
+        height: 3rem;
+        width: 3rem;
+      }
+      .social a {
+      font-size:2rem;
+      padding: 0;
+    }
+    body {
+      background-color: #0077b5;
     }
 
 }
 
-@media all and (max-width:536px),
-    screen and (orientation:landscape) {
-    * {
-        font-size:0.3rem;
+@media all and (max-width:700px) {
+  .finalmsg p, finalmsg{
+    font-size:0.7rem;
+  }
+  .footerlogo {
+    height: 2.8rem;
+    width: 2.8rem;
+  }
+  .social a {
+  font-size:1.4rem;
+  padding: 0;
+}
+    body {
+      background-color: #dd00ff;
     }
+
+}
+
+@media all and (max-width:415px) {
+  .finalmsg p, finalmsg{
+    font-size:0.6rem;
+  }
+  .footerlogo {
+    height: 2rem;
+    width: 2rem;
+  }
+  .social a {
+  font-size:1rem;
+  padding: 0;
+}
+    body {
+      background-color: #ff8800;
+    }
+
 }
 
 
