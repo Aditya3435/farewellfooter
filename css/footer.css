@@ -12,6 +12,7 @@
   background-size: 200% 200%;
   animation: gradient 3s linear infinite;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   box-shadow: 10px 5px 10px #000;
@@ -143,8 +144,8 @@
 
 #circle text {
   font-family: "Helvetica Neue", Arial;
-  font-size: 2.2rem;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: 400;
 }
 
 #circle svg {
@@ -162,46 +163,51 @@
 
 /* media-queries */
 @media all and (max-width: 980px) {
-  .finalmsg p,
-  finalmsg {
-    font-size: 1.2rem;
+  .finalmsg p {
+    font-size: 1.3rem;
   }
   .footerlogo {
     height: 3rem;
     width: 3rem;
   }
   .social a {
-    font-size: 2rem;
+    font-size: 3rem;
     padding: 0;
   }
 }
 
 @media all and (max-width: 700px) {
-  .finalmsg p,
-  finalmsg {
-    font-size: 0.7rem;
+  .finalmsg p {
+    font-size: 1rem;
   }
   .footerlogo {
-    height: 2.8rem;
-    width: 2.8rem;
+    height: 3rem;
+    width: 3rem;
   }
   .social a {
-    font-size: 1.4rem;
-    padding: 0;
+    font-size: 2.1rem;
+    padding: 0.1rem;
   }
 }
 
 @media all and (max-width: 415px) {
-  .finalmsg p,
-  finalmsg {
-    font-size: 0.6rem;
+  .main-container{
+    flex-wrap: wrap;
+    align-items: flex-start;
   }
   .footerlogo {
-    height: 2rem;
-    width: 2rem;
+    margin-right: 1rem;
   }
-  .social a {
-    font-size: 1rem;
-    padding: 0;
+  .finalmsg  {
+    align-self: flex-end;
+    width: 100%;
+    text-align: center;
   }
+  .finalmsg p {
+    margin-top: 1.3rem;
+    font-size: 1.3rem;
+  }
+
+  
+  
 }
