@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Footer</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/mediaqueries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -21,17 +21,32 @@
                 <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
             </div>
 
-            <div class="footerlogo">
-                <img src="./images/pixo.png" alt="Pixologo">
+            <div class="container">
+                <img class="footerlogo" src="./images/pixo.png" alt="pixo">
+                <div id="circle">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                        y="0px" width="100px" height="100px" viewBox="0 0 300 300" enable-background="new 0 0 300 300"
+                        xml:space="preserve">
+                        <defs>
+                            <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 " />
+                        </defs>
+                        <circle cx="150" cy="100" r="75" fill="none" />
+                        <g>
+                            <use xlink:href="#circlePath" fill="none" />
+                            <text fill="#181818">
+                                <textPath xlink:href="#circlePath">Pixonoids Farewell 2022</textPath>
+                            </text>
+                        </g>
+                    </svg>
+                </div>
             </div>
 
             <div class="finalmsg">
                 <p>Made with <i class="fa fa-heart"></i> by Pixonoids</p>
-                
+
             </div>
         </div>
     </footer>
-    <script src="./js/script.js"></script>
 </body>
 
 </html>
