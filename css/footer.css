@@ -6,7 +6,7 @@
 
 .main-container {
   position: relative;
-  padding: 2rem;
+  padding: 2.5rem;
   transition: all 1s;
   background-image: linear-gradient(200deg, #1ed296, #d63aa2);
   background-size: 200% 200%;
@@ -62,8 +62,10 @@
 }
 
 .footerlogo {
-  height: 5rem;
-  width: 5rem;
+  height: 3.5rem;
+  width: 3.5rem;
+  animation: antirotate 10s linear infinite;
+
 }
 
 .fa-heart {
@@ -138,13 +140,14 @@
 
 #circle {
   position: absolute;
-  top: 0;
-  left: 0;
+  transition: all 0.5s;
+  top: -6rem;
+  left: -6rem;
 }
 
 #circle text {
   font-family: "Helvetica Neue", Arial;
-  font-size: 2rem;
+  font-size: 2.1rem;
   font-weight: 400;
 }
 
@@ -159,6 +162,18 @@
   100% {
     transform: rotate(360deg);
   }
+}
+@keyframes antirotate {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+#circle:hover, .footerlogo:hover {
+  transform: scale(0.78);
 }
 
 /* media-queries */
@@ -178,7 +193,7 @@
 
 @media all and (max-width: 700px) {
   .finalmsg p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .footerlogo {
     height: 3rem;
@@ -188,26 +203,31 @@
     font-size: 2.1rem;
     padding: 0.1rem;
   }
+  #circle, .footerlogo {
+    margin-right: 2rem;
+  }
 }
 
 @media all and (max-width: 415px) {
   .main-container{
     flex-wrap: wrap;
-    align-items: flex-start;
   }
+
   .footerlogo {
     margin-right: 1rem;
   }
   .finalmsg  {
-    align-self: flex-end;
+
     width: 100%;
     text-align: center;
   }
   .finalmsg p {
-    margin-top: 1.3rem;
+    margin-top: 1.5rem;
     font-size: 1.3rem;
   }
 
-  
-  
+  #circle {
+    transform: scale(0.7);
+  }
+
 }
