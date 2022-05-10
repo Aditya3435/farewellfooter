@@ -267,16 +267,16 @@
     padding: 0.7rem;
   }
   #circle {
-    transform: scale(1);
+    transform: scale(0.9);
     position: absolute;
     transition: all 0.5s;
     top: -4.3rem;
-    left: -2rem;
+    left: -1.7rem;
   }
   .footerlogo {
     height: 4rem;
     width: 4rem;
-    margin-left: 2.3rem;
+    margin-left: 2.6rem;
   }
   .finalmsg {
     width: 100%;
