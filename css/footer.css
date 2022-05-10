@@ -6,16 +6,17 @@
 
 .main-container {
   position: relative;
-  padding: 2.5rem;
+  padding: 2rem;
   transition: all 1s;
   background-image: linear-gradient(200deg, #1ed296, #d63aa2);
   background-size: 200% 200%;
   animation: gradient 3s linear infinite;
   display: flex;
   flex-wrap: wrap;
+  gap: 2rem;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 10px 5px 10px #000;
+  box-shadow: 2px 2px 15px #000;
   z-index: 1;
 }
 
@@ -51,8 +52,9 @@
 
 .social a {
   padding: 0.5rem;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
+
 .finalmsg p {
   font-size: 2rem;
   font-family: monospace;
@@ -65,7 +67,6 @@
   height: 3.5rem;
   width: 3.5rem;
   animation: antirotate 12s linear infinite;
-
 }
 
 .fa-heart {
@@ -111,13 +112,13 @@
 }
 .fa-github:hover {
   color: #fff;
-  background-color: #171515bf;
+  background-color: #171515;
   box-shadow: 1px 1px 10px rgb(0, 0, 0);
   transform: scale(0.5);
 }
 .fa-linkedin:hover {
   color: #fff;
-  background-color: #0076b571;
+  background-color: #0076b5;
   box-shadow: 1px 1px 10px rgb(0, 0, 0);
   transform: scale(0.5);
 }
@@ -125,24 +126,25 @@
   color: #fff;
   transform: scale(0.5);
   box-shadow: 1px 1px 10px rgb(0, 0, 0);
-  background-color: #cd486bb5;
+  background-color: #cd486b;
 }
 .fa-youtube:hover {
   transform: scale(0.5);
   color: #fff;
-  background-color: #c4302b9c;
+  background-color: #c4302b;
   box-shadow: 1px 1px 10px rgb(0, 0, 0);
 }
 
 .container {
   position: relative;
+  margin-left: 5rem;
 }
 
 #circle {
   position: absolute;
   transition: all 0.5s;
-  top: -5.7rem;
-  left: -5.7rem;
+  top: -4.5rem;
+  left: -4.5rem;
 }
 
 #circle text {
@@ -172,36 +174,69 @@
   }
 }
 
-#circle:hover, .footerlogo:hover {
+#circle:hover,
+.footerlogo:hover {
   transform: scale(0.78);
 }
 
+.copyright {
+  font-family: sans-serif;
+  width: 100%;
+  text-align: center;
+}
+
 /* media-queries */
-@media all and (max-width: 980px) {
+
+@media all and (max-width: 1060px) {
   .finalmsg p {
-    font-size: 1.3rem;
-  }
-  #circle {
-      position: absolute;
-      transition: all 0.5s;
-      top: -6rem;
-      transform: scale(0.7);
-      left: -6rem;
-    
+    font-size: 1.2rem;
   }
   .footerlogo {
-    height: 3rem;
-    width: 3rem;
+    height: 3.5rem;
+    width: 3.5rem;
   }
   .social a {
     font-size: 3rem;
-    padding: 0;
+    padding: 0.1rem;
+  }
+  #circle {
+    position: absolute;
+    transition: all 0.5s;
+    top: -4.5rem;
+    left: -4.5rem;
+  }
+  .container {
+    margin-right: 5rem;
   }
 }
 
-@media all and (max-width: 700px) {
+@media all and (max-width: 880px) {
   .finalmsg p {
     font-size: 1.2rem;
+  }
+  .footerlogo {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+  .social a {
+    font-size: 2rem;
+    padding: 0.1rem;
+  }
+  #circle {
+    position: absolute;
+    transition: all 0.5s;
+    top: -4.5rem;
+    transform: scale(0.8);
+    left: -4.5rem;
+  }
+  .container {
+    margin-right: 1rem;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .finalmsg p {
+    font-size: 1.1rem;
   }
   .footerlogo {
     height: 3rem;
@@ -211,21 +246,43 @@
     font-size: 2.1rem;
     padding: 0.1rem;
   }
-  #circle, .footerlogo {
-    margin-right: 2rem;
+  .finalmsg {
+    width: 100%;
+    text-align: center;
   }
+  #circle {
+    transform: scale(0.7);
+    position: absolute;
+    transition: all 0.5s;
+    top: -4.8em;
+    left: -4.8rem;
+  }
+  
 }
 
 @media all and (max-width: 415px) {
-  .main-container{
-    flex-wrap: wrap;
+  
+  .social a {
+    font-size: 2.5rem;
+    padding: 0.7rem;
   }
-
+  #circle {
+    transform: scale(1);
+    position: absolute;
+    transition: all 0.5s;
+    top: -4.3rem;
+    left: -2.4rem;
+  }
   .footerlogo {
-    margin-right: 1rem;
+    height: 4rem;
+    width: 4rem;
   }
-  .finalmsg  {
-
+  .container {
+    width: 100%;
+    text-align: center;
+    margin-right: 7rem;
+  }
+  .finalmsg {
     width: 100%;
     text-align: center;
   }
@@ -233,14 +290,4 @@
     margin-top: 1.5rem;
     font-size: 1.3rem;
   }
-
-  #circle {
-    transform: scale(0.7);
-      position: absolute;
-      transition: all 0.5s;
-      top: -6rem;
-      left: -6rem;
-    
-  }
-
 }
